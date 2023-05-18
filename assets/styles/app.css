@@ -1,5 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+:root {
+    --backdrop-color: rgba(0, 0, 0, 0.25);
+    --background-color: #ffffff;
+    --font-color: #000000;
+}
+
 * {
     font-family: 'Poppins', sans-serif;
+}
+
+.background-color {
+    background-color: var(--background-color);
+}
+
+.font-color {
+    color: var(--font-color);
+}
+
+.backdrop-color {
+    color: var(--backdrop-color);
 }
