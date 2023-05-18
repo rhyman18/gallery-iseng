@@ -18,12 +18,12 @@
         gap: 20px;
     }
 
-    .nav__navigation ul li a {
+    .nav__link {
         font-weight: 500;
         padding: 8px 0;
     }
 
-    .nav__navigation ul li a:hover {
+    .nav__link:hover {
         color: var(--hover-color-2);
         background-color: var(--background-nav);
     }

@@ -3,10 +3,11 @@ import UrlParser from '../routes/urlParser.js';
 import routes from '../routes/routes.js';
 
 class Main {
-    constructor({button, drawer, content}) {
+    constructor({button, drawer, content, links}) {
         this._button = button;
         this._drawer = drawer;
         this._content = content;
+        this._links = links;
 
         this._initialAppShell();
     }

@@ -80,13 +80,13 @@ body {
     left: 0;
 }
 
-.nav__navigation ul li a {
+.nav__link {
     display: inline-block;
     color: var(--font-color);
     padding: 12px;
     width: 100%;
 }
 
-.nav__navigation ul li a:hover {
+.nav__link:hover {
     background-color: var(--hover-color);
 }
