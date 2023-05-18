@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
+    --font-color: #769FCD;
+    --hover-color: #B9D7EA;
+    --active-color: #B9D7EA;
+    --background-nav: #D6E6F2;
+    --background-color: #F7FBFC;
+    --border-color: 1px solid #B9D7EA;
     --backdrop-color: rgba(0, 0, 0, 0.25);
-    --background-color: #ffffff;
-    --font-color: #000000;
-}
-
-* {
-    font-family: 'Poppins', sans-serif;
 }
 
 .background-color {
@@ -23,5 +23,72 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    border-bottom: var(--border-color);
+    background-color: var(--background-nav);
+}
+
+.nav {
+    display: flex;
+    margin: 0 auto;
+    padding: 1rem 0;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__hamburger {
+    cursor: pointer;
+    padding: 8px 12px;
+    margin-right: 0.5rem;
+    color: var(--font-color);
+    background-color: var(--background-nav);
+}
+
+.nav__hamburger:active {
+    background-color: var(--active-color);
+}
+
+.nav__menu {
+    top: 8vh;
+    width: 100vw;
+    right: -1000px;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 10px;
+    transition: all 0.3s;
+    background-color: var(--background-nav);
+}
+
+.nav__menu.open {
+    right: 0;
+}
+
+.nav__item {
+    margin: 0;
+}
+
+.nav__link {
+    width: 100%;
+    padding: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: var(--font-color);
+}
+
+.nav__link:hover {
+    background-color: var(--hover-color);
+}
+
+.nav h1 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 1rem;
+    color: var(--font-color);
+    text-transform: uppercase;
 }
