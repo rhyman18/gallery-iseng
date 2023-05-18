@@ -21,3 +21,7 @@
 .backdrop-color {
     color: var(--backdrop-color);
 }
+
+body {
+    height: 100vh;
+}
