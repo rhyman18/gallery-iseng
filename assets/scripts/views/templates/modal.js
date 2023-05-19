@@ -5,7 +5,7 @@ const createModalBeginner = (gallery) => `
     </div>
     <div class="modal__gallery__detail">
         <h2>${gallery.judul}</h2>
-        <p class="elipsis-2">${gallery.deskripsi}</p>
+        <p class="modal__gallery__deskripsi">${gallery.deskripsi}</p>
     </div>
 </div>
 `;

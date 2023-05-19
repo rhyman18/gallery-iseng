@@ -48,3 +48,23 @@
         max-width: var(--width-xs);
     }
 }
+
+@media screen and (min-width: 800px) {
+    .modal__content {
+        width: 70vw;
+    }
+
+    .modal__gallery__detail {
+        margin-top: -80px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .modal__content {
+        width: 50vw;
+    }
+
+    .modal__gallery__detail {
+        margin-top: -160px;
+    }
+}
