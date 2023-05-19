@@ -38,7 +38,9 @@
 }
 
 body {
+    display: flex;
     min-height: 100vh;
+    flex-direction: column;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -105,8 +107,10 @@ body {
 }
 
 main {
+    flex-grow: 1;
     margin: 0 auto;
     max-width: var(--width-xl);
+    margin-bottom: 2rem;
 }
 
 .jumbotron {
@@ -126,9 +130,9 @@ main {
 }
 
 .gallery__list {
-    margin: 0 12px;
     gap: 12px;
     display: flex;
+    margin: 0 12px;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -144,8 +148,8 @@ main {
 
 .gallery__judul {
     font-weight: 600;
-    position: relative;
     margin-top: -52px;
+    position: relative;
     color: var(--font-color);
     border-radius: 45px 0 0 0;
     padding: 16px 16px 16px 28px;
@@ -154,4 +158,13 @@ main {
 
 .gallery__box:hover .gallery__judul {
     background-color: var(--hover-color);
+}
+
+footer {
+    padding: 12px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--font-color);
+    border-top: var(--border-color);
+    background-color: var(--background-color-2);
 }
