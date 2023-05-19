@@ -90,3 +90,8 @@ body {
 .nav__link:hover {
     background-color: var(--hover-color);
 }
+
+main {
+    margin: 0 auto;
+    max-width: var(--width-xl);
+}
