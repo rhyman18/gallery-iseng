@@ -6,8 +6,8 @@
     --hover-color: #B9D7EA;
     --hover-color-2: #5687c0;
     --active-color: #B9D7EA;
-    --background-nav: #D6E6F2;
     --background-color: #F7FBFC;
+    --background-color-2: #D6E6F2;
     --border-color: 1px solid #B9D7EA;
     --backdrop-color: rgba(0, 0, 0, 0.25);
 }
@@ -31,7 +31,7 @@ body {
 
 .nav {
     border-bottom: var(--border-color);
-    background-color: var(--background-nav);
+    background-color: var(--background-color-2);
 }
 
 .nav__container {
@@ -58,7 +58,7 @@ body {
     cursor: pointer;
     padding: 8px 12px;
     color: var(--font-color);
-    background-color: var(--background-nav);
+    background-color: var(--background-color-2);
 }
 
 .nav__hamburger button:active {
@@ -73,7 +73,7 @@ body {
     position: absolute;
     border-radius: 10px;
     transition: all 0.3s;
-    background-color: var(--background-nav);
+    background-color: var(--background-color-2);
 }
 
 .nav__navigation.open {
@@ -94,4 +94,19 @@ body {
 main {
     margin: 0 auto;
     max-width: var(--width-xl);
+}
+
+.jumbotron {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jumbotron h1 {
+    font-size: 40px;
+    font-weight: 600;
+    padding: 20px 40px;
+    color: var(--font-color);
+    border: var(--border-color);
 }

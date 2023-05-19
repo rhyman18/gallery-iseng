@@ -1,7 +1,9 @@
 const GalleryBeginner = {
     render() {
         return `
-        <div>Welcome to the gallery</div>
+        <div class="jumbotron">
+            <h1>Welcome to the gallery</h1>
+        </div>
         `;
     },
 
