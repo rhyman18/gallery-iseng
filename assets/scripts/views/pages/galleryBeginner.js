@@ -1,5 +1,6 @@
 import DataBeginner from '../../data/galleryBeginner.js';
 import createListBeginner from '../templates/galleryBeginner.js';
+import { createModalBeginner } from '../templates/modal.js';
 
 const GalleryBeginner = {
     render() {
@@ -33,6 +34,9 @@ const GalleryBeginner = {
             document.querySelector(`#gallery__beginner__${index}`)
                 .addEventListener('click', () => {
                     modal.style.display = 'block';
+
+                    document.querySelector('#modal__show')
+                        .innerHTML = createModalBeginner(gallery);
                 });
         });
     },
