@@ -108,5 +108,6 @@ main {
     font-weight: 600;
     padding: 20px 40px;
     color: var(--font-color);
+    text-transform: capitalize;
     border: var(--border-color);
 }

@@ -1,7 +1,9 @@
 const GalleryIntermediate = {
     render() {
         return `
-        <div>Welcome to the gallery (level intermediate)</div>
+        <div class="jumbotron">
+            <h1>Welcome to the gallery (intermediate)</h1>
+        </div>
         `;
     },
 

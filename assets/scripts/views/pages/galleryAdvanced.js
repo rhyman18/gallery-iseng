@@ -1,7 +1,9 @@
 const GalleryAdvanced = {
     render() {
         return `
-        <div>Welcome to the gallery (level advanced)</div>
+        <div class="jumbotron">
+            <h1>Welcome to the gallery (advanced)</h1>
+        </div>
         `;
     },
 
