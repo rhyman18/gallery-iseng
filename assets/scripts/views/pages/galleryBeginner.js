@@ -7,7 +7,7 @@ const GalleryBeginner = {
         <div class="jumbotron">
             <h1>Welcome to the gallery</h1>
         </div>
-        <div id="gallery__beginner"></div>
+        <div id="gallery__beginner" class="gallery__list"></div>
         `;
     },
 

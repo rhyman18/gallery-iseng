@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
+    --width-xs: 16rem;
+    --width-sm: 24rem;
+    --width-md: 28rem;
+    --width-lg: 32rem;
     --width-xl: 1200px;
     --font-color: #769FCD;
     --hover-color: #B9D7EA;
@@ -22,6 +26,15 @@
 
 .backdrop-color {
     color: var(--backdrop-color);
+}
+
+.elipsis-1 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    white-space: normal;
 }
 
 body {
@@ -97,17 +110,48 @@ main {
 }
 
 .jumbotron {
-    height: 30vh;
+    height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .jumbotron h1 {
-    font-size: 40px;
+    font-size: 22px;
     font-weight: 600;
     padding: 20px 40px;
     color: var(--font-color);
     text-transform: capitalize;
     border: var(--border-color);
+}
+
+.gallery__list {
+    margin: 0 12px;
+    gap: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery__box {
+    cursor: pointer;
+    filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.25));
+}
+
+.gallery__box img {
+    max-width: 100%;
+}
+
+.gallery__judul {
+    font-weight: 600;
+    position: relative;
+    margin-top: -52px;
+    color: var(--font-color);
+    border-radius: 45px 0 0 0;
+    padding: 16px 16px 16px 28px;
+    background-color: var(--background-color-2);
+}
+
+.gallery__box:hover .gallery__judul {
+    background-color: var(--hover-color);
 }

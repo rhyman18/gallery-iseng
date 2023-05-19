@@ -27,4 +27,20 @@
         color: var(--hover-color-2);
         background-color: var(--background-nav);
     }
+
+    .jumbotron {
+        height: 30vh;
+    }
+
+    .jumbotron h1 {
+        font-size: 40px;
+    }
+
+    .gallery__list {
+        gap: 36px;
+    }
+
+    .gallery__box img {
+        max-width: var(--width-xs);
+    }
 }

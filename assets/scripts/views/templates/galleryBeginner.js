@@ -1,6 +1,8 @@
 const createListBeginner = (gallery) => `
-<div>${gallery.judul}</div>
-<img src="${gallery.img_url}" />
+<a class="gallery__box">
+    <img src="${gallery.img_url}" alt="${gallery.judul}">
+    <div class="gallery__judul">${gallery.judul}</div>
+</a>
 `;
 
 export default createListBeginner;

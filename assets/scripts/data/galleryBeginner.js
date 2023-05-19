@@ -31,14 +31,6 @@ const DataBeginner = [
         judul: 'Gambar Kesekian',
         img_url: 'assets/images/gallery_beginner.png',
     },
-    {
-        judul: 'Gambar Kesekian',
-        img_url: 'assets/images/gallery_beginner.png',
-    },
-    {
-        judul: 'Gambar Kesekian',
-        img_url: 'assets/images/gallery_beginner.png',
-    },
 ];
 
 export default DataBeginner;
