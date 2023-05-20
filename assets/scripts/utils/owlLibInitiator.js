@@ -14,10 +14,10 @@ const OwlInitiator = {
                     750:{
                         items:3
                     },
-                    1200:{
+                    1050:{
                         items:4
                     },
-                    1500:{
+                    1400:{
                         items:5
                     }
                 }
