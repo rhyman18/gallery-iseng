@@ -52,6 +52,14 @@
     .gallery__intermediate__box {
         padding: 0 16px;
     }
+
+    .modal__gallery__intermediate {
+        flex-direction: row;
+    }
+
+    .modal__gallery__intermediate__detail {
+        margin-top: 0;
+    }
 }
 
 @media screen and (min-width: 800px) {

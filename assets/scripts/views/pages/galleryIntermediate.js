@@ -1,6 +1,7 @@
 import DataIntermediate from '../../data/galleryIntermediate.js';
 import createListIntermediate from '../templates/galleryIntermediate.js';
 import OwlInitiator from '../../utils/owlLibInitiator.js';
+import { createModalIntermediate } from '../templates/modal.js';
 
 const GalleryIntermediate = {
     render() {
@@ -36,7 +37,8 @@ const GalleryIntermediate = {
                 .addEventListener('click', () => {
                     modal.style.display = 'block';
 
-                    
+                    document.querySelector('#modal__show')
+                        .innerHTML = createModalIntermediate(gallery);
                 });
         });
 
