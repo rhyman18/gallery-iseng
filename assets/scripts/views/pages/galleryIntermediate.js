@@ -24,6 +24,22 @@ const GalleryIntermediate = {
                 .innerHTML += createListIntermediate(gallery, index);
         });
 
+        const modal = document.querySelector('#modal');
+
+        document.querySelector('.modal__close')
+            .addEventListener('click', () => {
+                modal.style.display = 'none';
+            });
+
+        DataIntermediate.forEach((gallery, index) => {
+            document.querySelector(`#gallery__intermediate__${index}`)
+                .addEventListener('click', () => {
+                    modal.style.display = 'block';
+
+                    
+                });
+        });
+
         OwlInitiator.render();
     },
 };
