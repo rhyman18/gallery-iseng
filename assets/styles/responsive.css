@@ -41,6 +41,7 @@
     }
 
     .gallery__list {
+        margin: 0 auto;
         gap: 36px;
     }
 
