@@ -8,4 +8,4 @@ Membuat landing page situs Gallery untuk tugas ke 7 dari sesi zoom Codepolitan. 
 
 # Deployment Web
 
-Silahkan kunjungi **[]()** untuk melihat hasil jadi Website. Terdapat 3 gallery kategori dimana masing2 dibagi untuk kelas beginner, intermediate, dan advanced. Untuk fitur modal prev/next button di kategori advanced, belum works.
+Silahkan kunjungi **[https://gallery-ari.vercel.app](https://gallery-ari.vercel.app)** untuk melihat hasil jadi Website. Terdapat 3 gallery kategori dimana masing2 dibagi untuk kelas beginner, intermediate, dan advanced. Untuk fitur modal prev/next button di kategori advanced, belum works.
