@@ -41,13 +41,21 @@ const createModalIntermediate = (gallery) => `
 `;
 
 const createModalAdvanced = (gallery) => `
-<div class="modal__gallery">
+<div id="modal__advanced__${gallery.id}" class="modal__gallery modal__advanced">
     <div class="modal__gallery__img">
         <img src="${gallery.img_url}" alt="${gallery.judul}">
     </div>
     <div class="modal__gallery__detail">
         <h2>${gallery.judul}</h2>
         <p class="modal__gallery__deskripsi">${gallery.deskripsi}</p>
+    </div>
+</div>
+<div id="modal__button__${gallery.id}" class="modal__button__group">
+    <div id="prev__${gallery.id}" class="modal__prev">
+        <i class="fa-solid fa-arrow-left fa-xl"></i>
+    </div>
+    <div id="next__${gallery.id}" class="modal__next">
+        <i class="fa-solid fa-arrow-right fa-xl"></i>
     </div>
 </div>
 `;

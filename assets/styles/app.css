@@ -435,3 +435,37 @@ footer {
 .gallery__advanced__box:hover .gallery__advanced__img img {
     transform: scale(1.25);
 }
+
+.modal__prev {
+    top: 50%;
+    left: 0;
+    padding: 8px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.modal__prev:hover {
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal__next {
+    top: 50%;
+    right: 0;
+    padding: 8px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.modal__next:hover {
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal__advanced {
+    display: none;
+}
+
+.modal__button__group {
+    display: none;
+}

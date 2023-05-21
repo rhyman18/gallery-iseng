@@ -19,9 +19,9 @@ const GalleryAdvanced = {
     },
 
     afterRender() {
-        DataAdvanced.forEach((gallery, index) => {
+        DataAdvanced.forEach((gallery) => {
             document.querySelector('#gallery__advanced')
-                .innerHTML += createListAdvanced(gallery, index);
+                .innerHTML += createListAdvanced(gallery);
         });
 
         const modal = document.querySelector('#modal');
@@ -29,15 +29,59 @@ const GalleryAdvanced = {
         document.querySelector('.modal__close')
             .addEventListener('click', () => {
                 modal.style.display = 'none';
+
+                document.querySelectorAll('.modal__advanced').forEach((element) => {
+                    element.style.display = 'none';
+                });
+
+                document.querySelectorAll('.modal__button__group').forEach((element) => {
+                    element.style.display = 'none';
+                });
             });
-        
-        DataAdvanced.forEach((gallery, index) => {
-            document.querySelector(`#gallery__advanced__${index}`)
+
+        DataAdvanced.forEach((gallery) => {
+            document.querySelector('#modal__show')
+                .innerHTML += createModalAdvanced(gallery);
+
+            document.querySelector(`#gallery__advanced__${gallery.id}`)
                 .addEventListener('click', () => {
                     modal.style.display = 'block';
 
-                    document.querySelector('#modal__show')
-                        .innerHTML = createModalAdvanced(gallery);
+                    document.querySelector(`#modal__advanced__${gallery.id}`)
+                        .style.display = 'block';
+
+                    document.querySelector(`#modal__button__${gallery.id}`)
+                        .style.display = 'block';
+                });
+
+            document.querySelector(`#prev__${gallery.id}`)
+                .addEventListener('click', () => {
+                    document.querySelector(`#modal__advanced__${gallery.id}`)
+                        .style.display = 'none';
+
+                    document.querySelector(`#modal__button__${gallery.id}`)
+                        .style.display = 'none';
+
+                    document.querySelector(`#modal__advanced__${gallery.id - 1}`)
+                        .style.display = 'block';
+
+                    document.querySelector(`#modal__button__${gallery.id - 1}`)
+                        .style.display = 'block';
+                });
+
+            document.querySelector(`#next__${gallery.id}`)
+                .addEventListener('click', () => {
+                    document.querySelector(`#modal__advanced__${gallery.id}`)
+                        .style.display = 'none';
+
+                    document.querySelector(`#modal__button__${gallery.id}`)
+                        .style.display = 'none';
+
+                    document.querySelector(`#modal__advanced__${gallery.id + 1}`)
+                        .style.display = 'block';
+
+                    document.querySelector(`#modal__button__${gallery.id + 1}`)
+                        .style.display = 'block';
                 });
         });
     },
