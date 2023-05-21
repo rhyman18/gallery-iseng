@@ -3,31 +3,6 @@
         font-size: 22px;
     }
 
-    .nav__button {
-        display: none;
-    }
-
-    .nav__navigation {
-        position: static;
-        width: auto;
-        border-radius: 0;
-    }
-
-    .nav__navigation ul {
-        display: flex;
-        gap: 20px;
-    }
-
-    .nav__link {
-        font-weight: 500;
-        padding: 8px 0;
-    }
-
-    .nav__link:hover {
-        color: var(--hover-color-2);
-        background-color: var(--background-nav);
-    }
-
     .jumbotron {
         height: 30vh;
     }
@@ -63,6 +38,31 @@
 }
 
 @media screen and (min-width: 800px) {
+    .nav__button {
+        display: none;
+    }
+
+    .nav__navigation {
+        position: static;
+        width: auto;
+        border-radius: 0;
+    }
+
+    .nav__navigation ul {
+        display: flex;
+        gap: 20px;
+    }
+
+    .nav__link {
+        font-weight: 500;
+        padding: 8px 0;
+    }
+
+    .nav__link:hover {
+        color: var(--hover-color-2);
+        background-color: var(--background-nav);
+    }
+    
     .modal__content {
         width: 70vw;
     }

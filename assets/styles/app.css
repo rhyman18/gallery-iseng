@@ -17,6 +17,23 @@
     --drop-shadow: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.25));
 }
 
+html[data-color-mode="dark"] {
+    --width-xs: 16rem;
+    --width-sm: 24rem;
+    --width-md: 28rem;
+    --width-lg: 32rem;
+    --width-xl: 1200px;
+    --font-color: #A5D7E8;
+    --hover-color: #576CBC;
+    --hover-color-2: #B9D7EA;
+    --active-color: #576CBC;
+    --background-color: #0B2447;
+    --background-color-2: #19376D;
+    --border-color: 1px solid #576CBC;
+    --backdrop-color: rgba(0, 0, 0, 0.4);
+    --drop-shadow: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.25));
+}
+
 .background-color {
     background-color: var(--background-color);
 }
@@ -468,4 +485,8 @@ footer {
 
 .modal__button__group {
     display: none;
+}
+
+#btn__theme {
+    cursor: pointer;
 }

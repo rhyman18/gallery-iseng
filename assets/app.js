@@ -5,6 +5,7 @@ const main = new Main({
     drawer: document.querySelector('.nav__navigation'),
     content: document.querySelector('#mainContent'),
     links: document.querySelectorAll('.nav__link'),
+    themeBtn: document.querySelector('#btn__theme'),
 });
 
 window.addEventListener('hashchange', () => {

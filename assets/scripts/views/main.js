@@ -1,13 +1,15 @@
 import DrawerInitiator from '../utils/drawerInitiator.js';
+import ThemeInitiator from '../utils/themeInitiator.js';
 import UrlParser from '../routes/urlParser.js';
 import routes from '../routes/routes.js';
 
 class Main {
-    constructor({button, drawer, content, links}) {
+    constructor({button, drawer, content, links, themeBtn}) {
         this._button = button;
         this._drawer = drawer;
         this._content = content;
         this._links = links;
+        this._themeBtn = themeBtn;
 
         this._initialAppShell();
     }
@@ -19,6 +21,8 @@ class Main {
             content: this._content,
             links: this._links,
         });
+
+        ThemeInitiator.init(this._themeBtn);
     }
 
     renderPage() {
