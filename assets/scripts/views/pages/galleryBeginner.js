@@ -30,6 +30,7 @@ const GalleryBeginner = {
             .addEventListener('click', () => {
                 modal.style.display = 'none';
             });
+
         DataBeginner.forEach((gallery, index) => {
             document.querySelector(`#gallery__beginner__${index}`)
                 .addEventListener('click', () => {

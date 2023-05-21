@@ -1,5 +1,6 @@
 import DataAdvanced from '../../data/galleryAdvanced.js';
 import createListAdvanced from '../templates/galleryAdvanced.js';
+import { createModalAdvanced } from '../templates/modal.js';
 
 const GalleryAdvanced = {
     render() {
@@ -21,6 +22,23 @@ const GalleryAdvanced = {
         DataAdvanced.forEach((gallery, index) => {
             document.querySelector('#gallery__advanced')
                 .innerHTML += createListAdvanced(gallery, index);
+        });
+
+        const modal = document.querySelector('#modal');
+
+        document.querySelector('.modal__close')
+            .addEventListener('click', () => {
+                modal.style.display = 'none';
+            });
+        
+        DataAdvanced.forEach((gallery, index) => {
+            document.querySelector(`#gallery__advanced__${index}`)
+                .addEventListener('click', () => {
+                    modal.style.display = 'block';
+
+                    document.querySelector('#modal__show')
+                        .innerHTML = createModalAdvanced(gallery);
+                });
         });
     },
 };
